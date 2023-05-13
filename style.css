@@ -302,7 +302,7 @@ display: none;
     gap: 20px;
     padding: 10px 20px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .card1 { 
