@@ -147,6 +147,124 @@ h2{
     padding: 0px 170px 0px 0px;
 }
 
+/* productos */
+
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 10px;
+
+}
+
+.prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+    
+.prod1 {    
+    font-weight: 500;
+    border-radius: 0.5rem;
+    height: 200px;
+    padding: 5px 10px;
+    display: flex;
+    background-color: rgb(68, 67, 67);
+    padding: 20px;
+    gap: 15px;
+    
+    
+}
+
+.prod2 {    
+    font-weight: 500;
+    border-radius: 0.5rem;
+    height: 200px;
+    padding: 5px 10px;
+    display: flex;
+    background-color: rgb(68, 67, 67);
+    padding: 20px;
+    gap: 15px;
+}
+
+.prod3 {    
+    font-weight: 500;
+    border-radius: 0.5rem;
+    height: 200px;
+    padding: 5px 10px;
+    display: flex;
+    background-color: rgb(68, 67, 67);
+    padding: 20px;
+    gap: 15px;
+}
+
+.prod4 {    
+    font-weight: 500;
+    border-radius: 0.5rem;
+    height: 200px;
+    padding: 5px 10px;
+    display: flex;
+    background-color: rgb(68, 67, 67);
+    padding: 20px;
+    gap: 15px;
+}
+
+.prod5 {    
+    font-weight: 500;
+    border-radius: 0.5rem;
+    height: 200px;
+    padding: 5px 10px;
+    display: flex;
+    background-color: rgb(68, 67, 67);
+    padding: 20px;
+    gap: 15px;
+}
+
+.prod6 {    
+    font-weight: 500;
+    border-radius: 0.5rem;
+    height: 200px;
+    padding: 5px 10px;
+    display: flex;
+    background-color: rgb(68, 67, 67);
+    padding: 20px;
+    gap: 15px;
+}
+
+.prod7 {    
+    font-weight: 800;
+    border-radius: 0.5rem;
+    height: 200px;
+    padding: 5px 10px;
+    display: flex;
+    background-color: rgb(68, 67, 67);
+    padding: 20px;
+    gap: 15px;
+
+}
+
+
+.prod1-info,
+.prod2-info,
+.prod3-info,
+.prod4-info,
+.prod5-info,
+.prod6-info,
+.prod7-info {
+    color: white;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(58, 57, 57);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+
 
 
 
