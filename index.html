@@ -6,152 +6,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LM BEBIDAS</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueris.css"/>
+
 </head>
 
 <body>
- <header>
-    <img src="img/logoblanco.png" alt="logo" class="logo"/>
-    <h1>LM BEBIDAS</h1>
-    <nav class="menu">
-        <ul class="menu-list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Ubicacion</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
-
-        <img src="img/carrito.png" alt="carrito" class="carrito">
-    </nav>
- </header>
+    <header>
+        <img src="img/logoblanco.png" alt="logo" class="logo"/>
+        <h1>LM BEBIDAS</h1>
+        <nav class="menu">
+            <label for="menu-toggle" class="menu-label">
+                <img src="img/menublanco.png" alt="a" class="menu-icon" />
+            </label>
+            <!-- Agregamos el input y lo linkeamos al label -->
+            <input type="checkbox" id="menu-toggle" />
+            <ul class="menu-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ubicacion</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+            <!-- /Agregamos input y label para el carrito/ -->
+            <label for="cart-toggle" class="cart-label">
+            <img src="img/carrito.png"
+            alt="Carrito de compras"
+            class="cart-icon"
+            />
+            </label>
+            <input type="checkbox" id="cart-toggle" />
+            <img src="img/carrito.png" alt="carrito" class="carrito">
+        </nav>
+    </header>
  
- <main>
-  <h2>Dristribuidora de bebidas.</h2>
-<br>
-    <section class="hero">
-        <div class="hero-info">
-            <p class="info">¡Bienvenidos a nuestro local de bebidas!
+    <main>
+        <h2>Dristribuidora de bebidas.</h2>
+        <br>
+        <section class="hero">
+            <div class="hero-info">
+                <p class="info">¡Bienvenidos a nuestro local de bebidas!
                 <br>
                 <br>Somos un lugar en el que podrás encontrar una amplia variedad de bebidas para satisfacer tus gustos y necesidades. Desde bebidas energéticas para darte un impulso de energía, hasta las mejores promociones para tu finde semana.
                 <br>Nuestro objetivo es ofrecerte la mejor calidad en cada una de nuestras bebidas, por lo que trabajamos con marcas reconocidas y de confianza en el mercado.
                 <br>
                 <br>
                 ¡Esperamos que nos visite pronto!
-            </p>
-        </div>
-        <div class="hero-img">
-            <img src="img/fernet.jpg" alt="bebidas" class="hero-fernet">
-            <p class="lista">Consulte lista de precios<a href="https://www.instagram.com/lm.bebidas/" target="_black" class="precio"> aqui </a></p>
-        </div>
+                </p>
+            </div>
+            <div class="hero-img">
+                <img src="img/fernet.jpg" alt="bebidas" class="hero-fernet">
+                <p class="lista">Consulte lista de precios<a href="https://www.instagram.com/lm.bebidas/" target="_black" class="precio"> aqui </a></p>
+            </div>
         
-    </section>
+        </section>
 
 <!-- productos -->
-    <section class="products"> 
-        <h2>PRODUCTOS</h2>
-        <div class="prod-container">
+        <section class="products"> 
+            <h2>PRODUCTOS</h2>
+            <div class="prod-container">
             
-            <div class="prod1">
-                <img src="img/prod/fernet.jpg" alt="fernet">
-                <div class="prod1-info">
-                    <h3>Fernet<br>Branca</h3>
-                    <p>$2000</p>
-                    <button class="comprar">Agregar</button>
+                <div class="prod">
+                    <img src="img/prod/fernet.jpg" alt="fernet">
+                    <div class="prod-info">
+                        <h3>Fernet<br>Branca</h3>
+                        <p>$2000</p>
+                        <button class="comprar">Agregar</button>
+                    </div>    
+                </div>
+    
+
+                <div class="prod">
+                    <img src="img/prod/coca.jpg" alt="coca">
+                    <div class="prod-info">
+                        <h3>Coca Cola</h3>
+                        <p>$700</p>
+                        <button class="comprar">Agregar</button>
+                    </div>    
+                </div>
+
+                <div class="prod">
+                    <img src="img/prod/skyy.jpg" alt="skyy">
+                    <div class="prod-info">
+                        <h3>Skyy <br> Saborizado</h3>
+                        <p>$1900</p>
+                        <button class="comprar">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <img src="img/prod/smirnofff.jpg" alt="smirnoff">
+                    <div class="prod-info">
+                        <h3>Smirnoff <br> Saborizado</h3>
+                        <p>$1900</p>
+                        <button class="comprar">Agregar</button>
+                    </div>    
+                </div>
+
+                <div class="prod">
+                    <img src="img/prod/speed.jpg" alt="speed">
+                    <div class="prod-info">
+                        <h3>Speed</h3>
+                        <p>$400</p>
+                        <button class="comprar">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <img src="img/prod/latabrahma.jpg" alt="latabrahma">
+                    <div class="prod-info">
+                        <h3>Lata<br> Brahma</h3>
+                        <p>$400</p>
+                        <button class="comprar">Agregar</button>
+                    </div>
+                </div>    
+
+                <div class="prod-mas">
+                    <button>Mostrar mäs productos</button>
+                </div>
+            </div>  
+        </section>
+
+        <section id="cards">
+            <h3>¡Se nuestro cliente!</h3>
+            <p>Y aprovecha nuestros beneficios.</p>
+            <div class="cards-info">
+                <div class="card1">
+                    <img src="img/sale.webp" alt="desc">
+                    <h4>Descuentos</h4>
+                    <p>Tenemos las mejores promociones<br> y descuentos del mercado.</p>
+                </div>
+                <div class="card1">
+                    <img src="img/vaso.webp" alt="vaso">
+                    <h4>Regalos</h4>
+                    <p>Con tu compra mayor a $5.000<br> te llevas de regalo un vaso + hielo.</p>
+                </div>
+                <div class="card1">
+                    <img src="img/envio2.jpg" alt="envio">
+                    <h4>Envios gratis</h4>
+                    <p>Realizamos envios gratuitos<br> dentro de los 15km a la redonda.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contactos">
+            <div class="contact">
+            
+                <h3>Contactos</h3>
+            
+                
+                <div class="contact-info">
+                    <h5>Cordoba, Argentina</h5>
+                    <div class="contact-infoextra">
+                        <div class="icon">
+                            <img src="img/icon-ubi.jpg" alt="ubi">
+                            <p>Guayaquil 1172</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/icon-email.jpg" alt="email">
+                            <p>lmbebidas@gmail.com</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/icon-tel.jpg" alt="tel">
+                            <p>3517151436</p>
+                        </div>
+                    </div>
+                </div> 
+                
+            
+                <div class="redes">
+                    <img src="img/icon-whts.png" alt="w">
+                    <img src="img/icon-inst.avif" alt="i">
                 </div>    
             </div>
     
-
-            <div class="prod2">
-                <img src="img/prod/coca.jpg" alt="coca">
-                <div class="prod2-info">
-                    <h3>Coca Cola</h3>
-                    <p>$700</p>
-                    <button class="comprar">Agregar</button>
-
-                </div>    
+            <div class="captura">
+                <img src="img/Captura.PNG" alt="cap">
             </div>
-         
-
-            <div class="prod3">
-                <img src="img/prod/skyy.jpg" alt="skyy">
-                <div class="prod3-info">
-                    <h3>Skyy <br> Saborizado</h3>
-                    <p>$1900</p>
-                    <button class="comprar">Agregar</button>
-
-                </div>
-            </div>
-
-            <div class="prod4">
-                <img src="img/prod/smirnofff.jpg" alt="smirnoff">
-                <div class="prod4-info">
-                    <h3>Smirnoff <br> Saborizado</h3>
-                    <p>$1900</p>
-                    <button class="comprar">Agregar</button>
-
-                </div>    
-            </div>
-
-            <div class="prod5">
-                <img src="img/prod/speed.jpg" alt="speed">
-                <div class="prod5-info">
-                    <h3>Speed</h3>
-                    <p>$400</p>
-                    <button class="comprar">Agregar</button>
-                
-                </div>
-            </div>
-
-            <div class="prod6">
-                <img src="img/prod/latabrahma.jpg" alt="latabrahma">
-                <div class="prod6-info">
-                    <h3>Lata<br> Brahma</h3>
-                    <p>$400</p>
-                    <button class="comprar">Agregar</button>
-
-                </div>
-            </div>    
-
-            <div class="prod7">
-                <img src="img/prod/lataquilmes.jpg" alt="lataquilmes">
-                <div class="prod7-info">
-                    <h3>Lata<br> Quilmes</h3>
-                    <p>$400</p>
-                    <button class="comprar">Agregar</button>
-
-                </div>
-            </div>
-        </div>  
-
-    </section>
+        </section>
+    </main>    
 
    <br>
- <!--   Consulte lista de precios  
-    <a href="https://www.instagram.com/lm.bebidas/" target="_black"><b>AQUI</b>
-    </a>
-   <br>
-<br>
-<br>
-    <a><img scr="./img/fernet.jpg" 
-    alt="Prohibida su venta a menores"></a>
-
-  <h3>Aperitivos</h3> 
-    <div><li class="li">Fernet 750cc</li>
-    <li class="li">Campari</li>
-    <li class="li">Gancia</li>
-    <li class="li">Aperol</li></div>
-<br>
-  <h3>Vodka</h3>
-    <li>Skyy</li>
-    <li>Smirnoff</li>
-    <li>Sernova</li>
-<br> 
-  <h3>Gin</h3>
-    <li>Merle</li>
-    <li>Brighton</li>
-    <li>Maleficio</li>
-
-<br>
-<br>
+ <!-- 
     <div class="formulario">
     Deje sus datos y nos contactaremos
 <br>
@@ -175,27 +209,24 @@
     </div>
 
 <br>
-<br> 
-    HORARIOS
-    <table>
-<br>
-    <tr>
-        <th>Jueves</th>
-        <th>Vierner</th>
-        <th>Sabado</th>
-        </tr>
-    <tr>
-<br>
-        <td>20pm a 00</td>
-        <td>20pm a 2am</td>
-        <td>20pm a 2am</td>
-    </tr>
-    </table>-->
-</main> 
-
-<footer>
-
-</footer>
-
+<br> -->
+<footer> 
+    
+<h5>HORARIOS</h5>    
+<div class="horario">
+    <div class="dia">
+        <h6>Jueves</h6>
+        <p>20hs a 00</p>
+    </div>
+    <div class="dia">
+        <h6>Viernes</h6>
+        <p>20pm a 2am</p>
+    </div>
+    <div class="dia">
+        <h6>Sabado</h6>
+        <p>20pm a 2am</p>
+    </div>
+</div>
+</footer>   
 </body>
 </html>

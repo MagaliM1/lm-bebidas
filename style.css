@@ -12,16 +12,20 @@ header {
     background-color: rgb(68, 68, 68);
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     padding: 0px 30px 0px 30px;
     height: 100px;
+    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Para que se vea siempre por encima */
 }
 
 .logo {
     height: 70%;
     border-radius: 0.2rem;
-    padding: 0px 0px 0px 10px;
+    padding: 0px;
 }
 
 .menu,
@@ -64,14 +68,20 @@ main {
     flex-direction: column;
     gap: 30px;
     padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
 
 }
 
 h1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     font-weight: 200;
+}
+
+#hero {
+    display: flex;
 }
 
 .hero-info {
@@ -129,22 +139,79 @@ h1 {
 
 
 h1{
-    color:rgb(252, 200, 68);
+    background: radial-gradient(circle, rgba(246,176,54,1) 0%, rgba(251,232,78,1) 65%);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     text-align: center;
     font-size: 4rem;
     font-family: "https://fonts.google.com/specimen/Sigmar";
-    padding: 0px 0px 0px 170px ;
+    padding: 0px 15px 0px 15px ;
     font-weight: bold;
     
     
 }
 h2{
-    color:rgb(223, 176, 60);
+    background: radial-gradient(circle, rgba(246,176,54,1) 0%, rgba(251,232,78,1) 65%);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     text-align: center;
     font-size: 2rem;
     box-shadow: 3px 3px 2px;
     letter-spacing: 5px;
-    padding: 0px 170px 0px 0px;
+    padding: 0px 10px 0px 0px;
+}
+
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+display: none;
+}
+
+/* /-----------------------------CARRITO--------------------------------/ */
+.cart-icon {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    padding: 50px 30px;
+    background: linear-gradient(to top, #121e3c, var(--background));
+    border-left: 1px solid var(--nav-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: calc(100vh - 65px);
+    overflow-y: scroll;
+    display: none;
+    z-index: 2;
+    }
+
+  /* /OCULTAR BARRA DE SCROLL DEL CARRITO/ */
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
+.cart h2 {
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #2323234e;
+    padding: 20px;
+    border: 1px solid var(--electric);
+    border-radius: 10px;
+}
+
+.cart-item img {
+    height: 65px;
+    width: 65px;
 }
 
 /* productos */
@@ -155,6 +222,8 @@ h2{
     flex-direction: column;
     gap: 40px;
     padding: 100px 10px;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -166,103 +235,254 @@ h2{
     align-items: center;
 }
     
-.prod1 {    
-    font-weight: 500;
+.prod {    
     border-radius: 0.5rem;
-    height: 200px;
     padding: 5px 10px;
     display: flex;
-    background-color: rgb(68, 67, 67);
-    padding: 20px;
+    background: linear-gradient(0deg, rgba(246,176,54,1) 0%, rgba(251,232,78,1) 51%);
     gap: 15px;
-    
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.prod2 {    
-    font-weight: 500;
-    border-radius: 0.5rem;
+.prod img {
     height: 200px;
-    padding: 5px 10px;
-    display: flex;
-    background-color: rgb(68, 67, 67);
-    padding: 20px;
-    gap: 15px;
+    width: 200px;
 }
 
-.prod3 {    
-    font-weight: 500;
-    border-radius: 0.5rem;
-    height: 200px;
-    padding: 5px 10px;
-    display: flex;
-    background-color: rgb(68, 67, 67);
-    padding: 20px;
-    gap: 15px;
-}
-
-.prod4 {    
-    font-weight: 500;
-    border-radius: 0.5rem;
-    height: 200px;
-    padding: 5px 10px;
-    display: flex;
-    background-color: rgb(68, 67, 67);
-    padding: 20px;
-    gap: 15px;
-}
-
-.prod5 {    
-    font-weight: 500;
-    border-radius: 0.5rem;
-    height: 200px;
-    padding: 5px 10px;
-    display: flex;
-    background-color: rgb(68, 67, 67);
-    padding: 20px;
-    gap: 15px;
-}
-
-.prod6 {    
-    font-weight: 500;
-    border-radius: 0.5rem;
-    height: 200px;
-    padding: 5px 10px;
-    display: flex;
-    background-color: rgb(68, 67, 67);
-    padding: 20px;
-    gap: 15px;
-}
-
-.prod7 {    
-    font-weight: 800;
-    border-radius: 0.5rem;
-    height: 200px;
-    padding: 5px 10px;
-    display: flex;
-    background-color: rgb(68, 67, 67);
-    padding: 20px;
-    gap: 15px;
-
-}
-
-
-.prod1-info,
-.prod2-info,
-.prod3-info,
-.prod4-info,
-.prod5-info,
-.prod6-info,
-.prod7-info {
-    color: white;
+.prod-info {
     flex-direction: column;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(58, 57, 57);
-    align-items: center;
-    justify-content: center;
     gap: 30px;
     padding: 15px;
+    justify-content: center;
+    align-items: center;
 }
+
+.prod-info h3 {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.prod-mas button {
+    background: linear-gradient(0deg, rgba(246,176,54,1) 0%, rgba(251,232,78,1) 51%);
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+/* CARDS */
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards h3 { 
+    display: flex;
+    color: rgb(252, 219, 179);
+    font-size: 40px;
+}
+
+#cards p {
+    color: rgb(190, 189, 189);
+    font-size: 18px;
+}
+
+.cards-info {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.card1 img {
+    display: flex;
+    width: 50px;
+    border-radius: 30px;
+}
+
+.card1 h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.card1 p {
+    color: darkgray ;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px 0px 0px;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    
+}
+
+#contactos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+    background-color: rgb(87, 86, 86) ;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.contact h3 {
+    color: rgb(248, 196, 132);
+    font-size: 40px;
+
+}
+
+.contact-info {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-info h5 {
+    color: white;
+}
+
+.contact-infoextra {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.contact-infoextra img {
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-infoextra p {
+    color: rgb(216, 215, 215);
+
+}
+
+.icon {
+    flex-direction: row;
+    display: flex;
+    border-radius: 1px;
+    gap: 5px;
+}
+
+.icon img {
+    border-radius: 15px;
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+}
+
+.redes img {
+    display: flex;
+    width: 25px;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.captura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.captura img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+footer {
+    background: linear-gradient(0deg, rgba(246,176,54,1) 0%, rgba(251,232,78,1) 51%);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h5 {
+    font-size: 20px;
+}
+
+.horario {
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+
+.dia {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(246,176,54,1) 0%, rgba(103,96,41,1) 65%);
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.dia h6 {
+    font-size: 20px;
+}
+
+
+
+
+
 
 
 
