@@ -7,6 +7,7 @@
     <title>LM BEBIDAS</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueris.css"/>
+    <link rel="stylesheet" href="animaciones.css"/>
 
 </head>
 
@@ -21,29 +22,69 @@
             <!-- Agregamos el input y lo linkeamos al label -->
             <input type="checkbox" id="menu-toggle" />
             <ul class="menu-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Ubicacion</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#cards">Registrate</a></li>
+                <li><a href="#contactos">Contactos</a></li>
             </ul>
             <!-- /Agregamos input y label para el carrito/ -->
-            <label for="cart-toggle" class="cart-label">
-            <img src="img/carrito.png"
-            alt="Carrito de compras"
-            class="cart-icon"
-            />
-            </label>
+            
             <input type="checkbox" id="cart-toggle" />
             <img src="img/carrito.png" alt="carrito" class="carrito">
+
+            <div class="cart">
+                <p>Tu compra</p>
+        
+                <div class="cart-item">
+                    <img src="img/fernet.jpg" alt="Nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Fernet 750ml</h3>
+                        <span class="item-price">$2000</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+        
+                <div class="cart-item">
+                    <img src="img/prod/coca.jpg" alt="Nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Coca Cola 2l</h3>
+                        <span class="item-price">$700</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+        
+                <div class="cart-item">
+                    <img src="img/prod/speed.jpg" alt="Nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Speed XL</h3>
+                        <span class="item-price">$400</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="botoncompra">COMPRAR</div>
+            </div>    
         </nav>
     </header>
- 
+
     <main>
         <h2>Dristribuidora de bebidas.</h2>
         <br>
-        <section class="hero">
+        <section id="hero">
             <div class="hero-info">
-                <p class="info">¡Bienvenidos a nuestro local de bebidas!
+                <p class="info">🍺 ¡Bienvenidos a nuestro local de bebidas! 🍺
                 <br>
                 <br>Somos un lugar en el que podrás encontrar una amplia variedad de bebidas para satisfacer tus gustos y necesidades. Desde bebidas energéticas para darte un impulso de energía, hasta las mejores promociones para tu finde semana.
                 <br>Nuestro objetivo es ofrecerte la mejor calidad en cada una de nuestras bebidas, por lo que trabajamos con marcas reconocidas y de confianza en el mercado.
@@ -53,14 +94,14 @@
                 </p>
             </div>
             <div class="hero-img">
-                <img src="img/fernet.jpg" alt="bebidas" class="hero-fernet">
-                <p class="lista">Consulte lista de precios<a href="https://www.instagram.com/lm.bebidas/" target="_black" class="precio"> aqui </a></p>
+                <img src="img/local.jpg" alt="bebidas" class="hero-fernet">
+                <p class="lista"> Ventas por mayor y menor.</p>
             </div>
         
         </section>
 
 <!-- productos -->
-        <section class="products"> 
+        <section id="products"> 
             <h2>PRODUCTOS</h2>
             <div class="prod-container">
             
@@ -120,13 +161,17 @@
                 </div>    
 
                 <div class="prod-mas">
-                    <button>Mostrar mäs productos</button>
+                    <button>Mostrar más productos</button>
                 </div>
             </div>  
         </section>
 
         <section id="cards">
-            <h3>¡Se nuestro cliente!</h3>
+            <h3>¡Se nuestro cliente! 🥂</h3>
+            <div class="btns">
+                <a href="./login.html" class="btn">Iniciar Sesión</a>
+                <a href="./register.html" class="btn">Registrarme</a>
+            </div>
             <p>Y aprovecha nuestros beneficios.</p>
             <div class="cards-info">
                 <div class="card1">
@@ -173,8 +218,8 @@
                 
             
                 <div class="redes">
-                    <img src="img/icon-whts.png" alt="w">
-                    <img src="img/icon-inst.avif" alt="i">
+                    <a href="https://api.whatsapp.com/send?phone=543517151436&text=Hola%F0%9F%8D%B7%2C%20quer%C3%ADa%20pedirles%E2%80%A6" target="_blank"><img src="img/icon-whts.png" alt="w" ></a>
+                    <a href="https://www.instagram.com/lm.bebidas/" target="_black"><img src="img/icon-inst.avif" alt="i"></a>
                 </div>    
             </div>
     
@@ -183,50 +228,23 @@
             </div>
         </section>
     </main>    
-
-   <br>
- <!-- 
-    <div class="formulario">
-    Deje sus datos y nos contactaremos
-<br>
-<br>
-   <label for="nombre">Nombre:</label>
-   <input type="text" id="nombre" placeholder="ingrese su nombre">
-<br>
-<br>
-   <label for="email">Email:</label>
-   <input type="email" id="email" placeholder="ingrese su email">
-
-<br>
-<br>
-    Esta interesado en la venta por:
-<br>
-<br>
-    <label for="checkbox1">Por menor</label>
-    <input type="checkbox" id="checkbox1"/>
-    <label for="checkbox2">Por mayor</label>
-    <input type="checkbox" id="checkbox2">
-    </div>
-
-<br>
-<br> -->
-<footer> 
+    <footer> 
     
-<h5>HORARIOS</h5>    
-<div class="horario">
-    <div class="dia">
-        <h6>Jueves</h6>
-        <p>20hs a 00</p>
-    </div>
-    <div class="dia">
-        <h6>Viernes</h6>
-        <p>20pm a 2am</p>
-    </div>
-    <div class="dia">
-        <h6>Sabado</h6>
-        <p>20pm a 2am</p>
-    </div>
-</div>
-</footer>   
+        <h5>HORARIOS</h5>    
+        <div class="horario">
+            <div class="dia">
+                <h6>Jueves</h6>
+                <p>20pm a 00hs</p>
+            </div>
+            <div class="dia">
+                <h6>Viernes</h6>
+                <p>20pm a 2am</p>
+            </div>
+            <div class="dia">
+                <h6>Sábado</h6>
+                <p>20pm a 2am</p>
+            </div>
+        </div>
+    </footer>   
 </body>
 </html>

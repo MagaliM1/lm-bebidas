@@ -1,0 +1,28 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top:110px;
+}
+
+.menu-list li {
+    position: relative;
+    padding: 0;
+}
+
+.menu-list li a::after {
+    content: "" ;
+    height: 2px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(248, 225, 183);
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+    
+}
+
+.menu-list li a:hover::after {
+    transform-origin: bottom left ;
+    transform: scaleX(1);
+}

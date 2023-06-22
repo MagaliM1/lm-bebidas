@@ -37,7 +37,7 @@ header {
 }
 
 a {
-    background-color: rgb(248, 247, 247);
+    
     border-radius: 0.7rem;
     padding: 10px 10px;
 }
@@ -47,8 +47,9 @@ a {
 }
 
 .menu-list a {
-    color: rgb(224, 142, 42);
+    color: rgb(245, 196, 135);
     font-weight: 550;
+    font-size: 22px;
 }
 
 .carrito {
@@ -59,6 +60,134 @@ a {
     cursor: pointer;
     background-color: rgb(247, 226, 181);
     border-radius: 2rem;
+}
+
+.cart {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    padding: 50px 30px;
+    background: rgb(243, 239, 227);
+    border-left: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: calc(85vh - 65px);
+    overflow-y: scroll;
+    
+    transform: translate(2);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+    border-radius: 0.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart p {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: #f1cc9d;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    height: 70px;
+    width: 70px;
+    padding: 0px 1px ;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title {
+    color: rgb(252, 240, 223);
+    border: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.item-price {
+    color:rgb(245, 224, 168);
+    font-size: 18px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-handler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quantity-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: azure;
+    font-weight: 400;
+}
+
+.item-quantity {
+    color: dimgrey;
+}
+
+.up {
+    border: 1px solid rgb(4, 49, 49);
+    background-color: #f5dab8;
+    color: dimgray;
+}
+
+.down {
+    background-color: #f5dab8;
+    border: 1px solid rgb(4, 49, 49);
+    color: dimgray;
+
+}
+
+.botoncompra {
+    align-items: center;
+    justify-content: center;
+    background: rgb(243, 197, 112);
+    color: white;
+    display: flex;
+    padding: 0;
+    width: 130px;
+    height: 40px;
+    border-radius: 0.5rem;
+}  
+
+/*Toggle del carro*/
+#cart-toggle:checked + .cart {
+    transform: translate(0);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+} 
+
+#menu-toggle,
+#cart-toggle,
+.menu-label,
+.cart /*no anda*/
+{
+    display: none;
+}
+
+/* /OCULTAR BARRA DE SCROLL DEL CARRITO/ */
+
+.cart::-webkit-scrollbar {
+    display: none;
 }
 
 main {
@@ -82,6 +211,7 @@ h1 {
 
 #hero {
     display: flex;
+    gap: 20px;
 }
 
 .hero-info {
@@ -89,22 +219,25 @@ h1 {
     flex-direction: column;
     gap: 20px;
     width: 60%;
-    color: white;
     font-size: 25px;
-    padding: 0px 5px;
+    padding: 20px;
+    background: rgb(61, 61, 61);
+    border-radius: 20px;
 }
 
 .info {
     font-weight: bold;
     letter-spacing: 2px;
-    word-spacing: 5px;
+    word-spacing: 2px;
     text-align: center;
+    padding: 20px;
+    color: rgba(254,247,228,1)
 
 }
 
 .precio {
-    background-color: bisque;
-    padding: 0px 5px;
+    background: linear-gradient(338deg, rgba(129,52,175,1) 0%, rgba(221,42,123,1) 28%, rgba(254,218,119,1) 100%);
+    padding: 3px 8px;
 }
 
 .hero-img {
@@ -116,7 +249,11 @@ h1 {
     color: white;
     align-items: center;
     gap: 20px;
-    
+}
+
+.hero-img p {
+    font-size: 17px;
+    color: rgb(153, 153, 153);
 }
 
 .hero-fernet {
@@ -152,72 +289,23 @@ h1{
     
 }
 h2{
-    background: radial-gradient(circle, rgba(246,176,54,1) 0%, rgba(251,232,78,1) 65%);
+    background: rgb(253, 215, 168);
     color:transparent;
     background-clip: text;
     -webkit-background-clip: text;
     text-align: center;
-    font-size: 2rem;
+    font-size: 35px;
+    font-weight: 700;
     box-shadow: 3px 3px 2px;
     letter-spacing: 5px;
     padding: 0px 10px 0px 0px;
 }
 
-#menu-toggle,
-#cart-toggle,
-.menu-label {
-display: none;
-}
-
-/* /-----------------------------CARRITO--------------------------------/ */
-.cart-icon {
-    position: absolute;
-    top: 65px;
-    right: 0;
-    padding: 50px 30px;
-    background: linear-gradient(to top, #121e3c, var(--background));
-    border-left: 1px solid var(--nav-bg);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: calc(100vh - 65px);
-    overflow-y: scroll;
-    display: none;
-    z-index: 2;
-    }
-
-  /* /OCULTAR BARRA DE SCROLL DEL CARRITO/ */
-
-.cart::-webkit-scrollbar {
-    display: none;
-}
-
-.cart h2 {
-    color: var(--text-white);
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background-color: #2323234e;
-    padding: 20px;
-    border: 1px solid var(--electric);
-    border-radius: 10px;
-}
-
-.cart-item img {
-    height: 65px;
-    width: 65px;
-}
 
 /* productos */
 
 
-.products {
+#products {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -226,6 +314,7 @@ display: none;
     align-items: center;
 
 }
+
 
 .prod-container {
     display: flex;
@@ -239,7 +328,7 @@ display: none;
     border-radius: 0.5rem;
     padding: 5px 10px;
     display: flex;
-    background: linear-gradient(0deg, rgba(246,176,54,1) 0%, rgba(251,232,78,1) 51%);
+    background: radial-gradient(circle, rgba(251,233,210,1) 45%, rgba(252,219,179,1) 70%, rgba(251,209,157,1) 90%);
     gap: 15px;
     flex-direction: column;
     justify-content: center;
@@ -254,10 +343,11 @@ display: none;
 .prod-info {
     flex-direction: column;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    gap: 30px;
+    gap: 10px;
     padding: 15px;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .prod-info h3 {
@@ -265,9 +355,16 @@ display: none;
     align-items: center;
 }
 
+.prod-info button {
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    padding: 3px;
+}
+
 
 .prod-mas button {
-    background: linear-gradient(0deg, rgba(246,176,54,1) 0%, rgba(251,232,78,1) 51%);
+    background: radial-gradient(circle, rgba(251,233,210,1) 45%, rgba(252,219,179,1) 70%, rgba(251,209,157,1) 90%);
     cursor: pointer;
     height: 50px;
     width: 180px;
@@ -284,17 +381,19 @@ display: none;
     gap: 30px;
     justify-content: center;
     align-items: center;
+    padding: 40px 0px;
 }
 
 #cards h3 { 
     display: flex;
     color: rgb(252, 219, 179);
-    font-size: 40px;
+    font-size: 45px;
+
 }
 
 #cards p {
-    color: rgb(190, 189, 189);
-    font-size: 18px;
+    color: rgb(250, 242, 228);
+    font-size: 20px;
 }
 
 .cards-info {
@@ -321,23 +420,41 @@ display: none;
 }
 
 .card1 h4 {
-    color: white;
+    color: rgb(255, 230, 198);
     font-size: 20px;
 }
 
 .card1 p {
-    color: darkgray ;
+    color: rgb(250, 240, 212);
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
+
+.btns {
+    display: flex;
+    gap: 12px;
+}
+.btn {
+    display: flex;
+    background: #f7d5a9;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 
 /*footer*/
 
 footer {
     display: flex;
     justify-content: center;
-    padding: 70px 0px 0px 0px;
+   
     flex-direction: column;
     gap: 5px;
     align-items: center;
@@ -430,7 +547,7 @@ footer {
 
 .redes img {
     display: flex;
-    width: 25px;
+    width: 30px;
     gap: 20px;
     border-radius: 15px;
 }
@@ -448,7 +565,7 @@ footer {
 }
 
 footer {
-    background: linear-gradient(0deg, rgba(246,176,54,1) 0%, rgba(251,232,78,1) 51%);
+    background: rgb(68, 68, 68);
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -456,19 +573,20 @@ footer {
 
 footer h5 {
     font-size: 20px;
+    color: #f1cc9d;
 }
 
 .horario {
     display: flex;
     gap: 30px;
-    color: white;
+    color: rgb(83, 83, 83);
 }
 
 .dia {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    background: radial-gradient(circle, rgba(246,176,54,1) 0%, rgba(103,96,41,1) 65%);
+    background: linear-gradient(338deg, rgba(252,212,130,1) 0%, rgba(250,229,187,1) 50%, rgba(242,225,208,1) 100%);
     padding: 15px;
     justify-content: center;
     align-items: center;
