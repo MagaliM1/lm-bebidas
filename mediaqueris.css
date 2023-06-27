@@ -55,7 +55,30 @@
     h1 {
         font-size: 50px;
     }
+
+    footer {
+        width: 100%;
+        height: 100%;
     }
+
+    }
+
+@media (max-width:1100px) {
+    
+    header {
+        width: 100%;
+    }
+
+    #contactos {
+        width: 95%;
+        height: 95%;}
+
+    footer {
+        width: 100%;
+        height: 100%;
+    }    
+
+}   
 
 
 
@@ -81,13 +104,13 @@
     }
 
     #contactos {
-        width: 90%;
-        height: 90%;}
+        width: 95%;
+        height: 95%;}
 
-        footer {
-            width: 95%;
-            height: 95%;
-        }    
+    footer {
+        width: 100%;
+        height: 100%;
+    }    
 }
 
 
@@ -120,16 +143,16 @@
     }
 
     #cards p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     #cards {
-        width: 90%;
-        height: 90%;
-    }
-    footer {
         width: 95%;
         height: 95%;
+    }
+    footer {
+        width: 100%;
+        height: 100%;
     }
 
 
@@ -160,16 +183,16 @@
     }
 
     #cards p {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     #cards {
-        width: 90%;
-        height: 90%;
-    }
-    footer {
         width: 95%;
         height: 95%;
+    }
+    footer {
+        width: 100%;
+        height: 100%;
     }
 
 }
@@ -201,17 +224,17 @@
     }
 
     #cards p {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #cards {
-        width: 90%;
-        height: 90%;
+        width: 95%;
+        height: 95%;
     }
 
     footer {
-        width: 95%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
     }
 
 
