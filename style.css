@@ -52,143 +52,13 @@ a {
     font-size: 22px;
 }
 
-.carrito {
-    font-weight: 700;
-    border-radius: 0.5rem;
-    height: 30px;
-    padding: 5px 10px;
-    cursor: pointer;
-    background-color: rgb(247, 226, 181);
-    border-radius: 2rem;
-}
-
-.cart {
-    position: absolute;
-    top: 90px;
-    right: 0;
-    padding: 50px 30px;
-    background: rgb(243, 239, 227);
-    border-left: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: calc(85vh - 65px);
-    overflow-y: scroll;
-    
-    transform: translate(2);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-    border-radius: 0.6rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.cart p {
-    font-size: 30px;
-    font-weight: 600;
-    color: black;
-}
-
-.cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background: #f1cc9d;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.cart-item img {
-    height: 70px;
-    width: 70px;
-    padding: 0px 1px ;
-}
-
-.item-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.item-title {
-    color: rgb(252, 240, 223);
-    border: black;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.item-price {
-    color:rgb(245, 224, 168);
-    font-size: 18px;
-    font-weight: 800;
-    align-items: center;
-    justify-content: center;
-}
-
-.item-handler {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.quantity-handler {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px 8px;
-    border-radius: 5px;
-    color: azure;
-    font-weight: 400;
-}
-
-.item-quantity {
-    color: dimgrey;
-}
-
-.up {
-    border: 1px solid rgb(4, 49, 49);
-    background-color: #f5dab8;
-    color: dimgray;
-}
-
-.down {
-    background-color: #f5dab8;
-    border: 1px solid rgb(4, 49, 49);
-    color: dimgray;
-
-}
-
-.botoncompra {
-    align-items: center;
-    justify-content: center;
-    background: rgb(243, 197, 112);
-    color: white;
-    display: flex;
-    padding: 0;
-    width: 130px;
-    height: 40px;
-    border-radius: 0.5rem;
-}  
-
-/*Toggle del carro*/
-#cart-toggle:checked + .cart {
-    transform: translate(0);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-} 
-
 #menu-toggle,
-#cart-toggle,
-.menu-label,
-.cart /*no anda*/
+.menu-label
 {
     display: none;
+
 }
 
-/* /OCULTAR BARRA DE SCROLL DEL CARRITO/ */
-
-.cart::-webkit-scrollbar {
-    display: none;
-}
 
 main {
     background-color: rgb(37, 37, 37);
@@ -360,11 +230,15 @@ h2{
     width: 70px;
     height: 30px;
     padding: 3px;
+    background: rgb(173, 173, 173);
+    color: white;
+    border-radius: 10px;
 }
 
 
 .prod-mas button {
     background: radial-gradient(circle, rgba(251,233,210,1) 45%, rgba(252,219,179,1) 70%, rgba(251,209,157,1) 90%);
+    color: rgb(95, 94, 94);
     cursor: pointer;
     height: 50px;
     width: 180px;
@@ -394,6 +268,8 @@ h2{
 #cards p {
     color: rgb(250, 242, 228);
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards-info {
@@ -438,7 +314,7 @@ h2{
 .btn {
     display: flex;
     background: #f7d5a9;
-    color: white;
+    color: rgb(95, 94, 94);
     width: 150px;
     height: 50px;
     font-size: 20px;
@@ -454,11 +330,11 @@ h2{
 footer {
     display: flex;
     justify-content: center;
-   
     flex-direction: column;
     gap: 5px;
     align-items: center;
     background-color: rgb(56, 56, 56);
+    padding: 5px;
     
 }
 
@@ -591,6 +467,8 @@ footer h5 {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    height: 50px;
+    width: 140px;
 }
 
 .dia h6 {

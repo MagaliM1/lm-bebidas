@@ -115,6 +115,18 @@
         font-size: 22px;
         word-spacing: 0px;
     }
+
+    .horario {
+        width: 80% ;
+        height: 80%;
+    }
+
+    .dia {
+        width: 120px ;
+        height: 40px ;
+        font-size: 10px;
+    }
+
 }
 
 @media (max-width:480px) {
@@ -130,7 +142,17 @@
         height: 80%;
         justify-content: center;
         align-items: center;
+    }
 
+    .horario {
+        width: 80% ;
+        height: 80%;
+    }
+
+    .dia {
+        width: 120px ;
+        height: 40px ;
+        font-size: 10px;
     }
 
 

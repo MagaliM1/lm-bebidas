@@ -26,3 +26,55 @@ html{
     transform-origin: bottom left ;
     transform: scaleX(1);
 }
+
+.btn {
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(253, 245, 229);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.prod-mas {
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.prod-mas:hover {
+    background: rgb(253, 215, 140);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+@keyframes slipe-up {
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.hero-info {
+    transition-property: all;
+    transition-duration: 1s;
+    animation-name: slipe-up;
+    transition-timing-function: ease-out;
+    
+}
+
+.comprar {
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.comprar:hover {
+    background: rgb(248, 203, 111);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
