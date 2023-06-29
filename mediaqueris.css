@@ -94,18 +94,18 @@
     }
 
     .card1 img {
-        width: 45px;
+        width: 47px;
     }
 
     .card1 h4 {
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .cardp {
         gap: 5px;
         justify-content: center;
         align-items: center;
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .cards-info {
@@ -162,18 +162,18 @@
     }
 
     .card1 img {
-        width: 37px;
+        width: 45px;
     }
 
     .card1 h4 {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     .cardp {
         gap: 5px;
         justify-content: center;
         align-items: center;
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .cards-info {
@@ -226,18 +226,18 @@
     }
 
     .card1 img {
-        width: 35px;
+        width: 40px;
     }
 
     .card1 h4 {
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .cardp {
         gap: 5px;
         justify-content: center;
         align-items: center;
-        font-size: 10px;
+        font-size: 16px;
     }
 
     footer {
@@ -298,18 +298,18 @@
     }
 
     .card1 img {
-        width: 30px;
+        width: 37px;
     }
 
     .card1 h4 {
-        font-size: 12px;
+        font-size: 22px;
     }
 
     .cardp {
         gap: 5px;
         justify-content: center;
         align-items: center;
-        font-size: 8px;
+        font-size: 14px;
     }
 
     footer {
@@ -365,18 +365,18 @@
     }
 
     .card1 img {
-        width: 30px;
+        width: 35px;
     }
 
     .card1 h4 {
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .cardp {
         gap: 5px;
         justify-content: center;
         align-items: center;
-        font-size: 8px;
+        font-size: 12px;
     }
 
     footer {

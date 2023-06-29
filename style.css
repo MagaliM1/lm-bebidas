@@ -265,14 +265,6 @@ h2{
 
 }
 
-#cards p {
-    color: rgb(250, 242, 228);
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
 .cards-info {
     display: flex;
     gap: 20px;
@@ -298,12 +290,22 @@ h2{
 
 .card1 h4 {
     color: rgb(255, 230, 198);
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .cardp {
-    color: rgb(250, 240, 212);
-    gap: 10px;
+    color: rgb(250, 242, 228);
+    gap: 20px;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.reg {
+    color: rgb(250, 242, 228);
+    gap: 20px;
+    font-size: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
